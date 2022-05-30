@@ -6,7 +6,7 @@ _G.Settings = {
     skilldelay = false,
     Raidselectmap = "None",
     distance = 10,
-    toggleguikey = "v",
+    toggleguikey = "z",
     Hardcore = false,
     afkandraid = false,
     autospingem = false,
@@ -61,7 +61,7 @@ _G.Settings = {
     Autoraid = false,
     kickrejoin = false
 }
-local a = "Wave Hub"
+local a = "🌊 Wave Hub"
 local b = "AnimeDimension.lua"
 function saveSettings()
     local c = game:GetService("HttpService")
@@ -194,13 +194,13 @@ local r = {"Easy", "Hard", "Nightmare", "Infinite"}
 local s = {"Capsule Series 1", "Raid Capsule", "Infinity Nojo Capsule", "Esper Capsule"}
 local t = {"Esper Raid", "Tengoku Raid", "Hirito Raid", "Titan Raid", "Infinity Nojo Raid"}
 local u = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local v = u:MakeWindow({Name = "Wave Hub", HidePremium = true})
+local v = u:MakeWindow({Name = "🌊 Wave Hub", HidePremium = true})
 local w = v:MakeTab({Name = "Main", PremiumOnly = false})
 local x = v:MakeTab({Name = "Extra", PremiumOnly = false})
 local y = v:MakeTab({Name = "Setting", PremiumOnly = false})
 local z = v:MakeTab({Name = "Notifier", PremiumOnly = false})
 local A = v:MakeTab({Name = "Inventory", PremiumOnly = false})
-local B = v:MakeTab({Name = "Auto Spin", PremiumOnly = false})
+local B = v:MakeTab({Name = "Auto Spin (Useless)", PremiumOnly = false})
 local C = v:MakeTab({Name = "Auto Claim", PremiumOnly = false})
 local D = v:MakeTab({Name = "TP Method", PremiumOnly = false})
 local E = v:MakeTab({Name = "Auto Skill", PremiumOnly = false})
@@ -926,7 +926,7 @@ A:AddToggle(
 )
 A:AddToggle(
     {
-        Name = "Auto Equip Best (In-Dev)",
+        Name = "Auto Equip Best (Dont Use)",
         Default = _G.Settings.autoequipbest,
         Callback = function(H)
             _G.Settings.autoequipbest = H
@@ -946,7 +946,7 @@ A:AddToggle(
 )
 A:AddToggle(
     {
-        Name = "Auto Upgrade (In-Dev)",
+        Name = "Auto Upgrade (Dont Use)",
         Default = _G.Settings.autoupgrade,
         Callback = function(H)
             _G.Settings.autoupgrade = H
@@ -1314,7 +1314,7 @@ y:AddDropdown(
 )
 B:AddToggle(
     {
-        Name = "Auto Spin Egg",
+        Name = "Auto Spin Egg ",
         Default = _G.Settings.autospingem,
         Callback = function(H)
             _G.Settings.autospingem = H
@@ -1640,7 +1640,7 @@ x:AddToggle(
 )
 x:AddToggle(
     {
-        Name = "Rejoin If Kick",
+        Name = "Rejoin If You Get Kicked",
         Default = _G.Settings.kickrejoin,
         Callback = function(H)
             _G.Settings.kickrejoin = H
@@ -1953,7 +1953,7 @@ E:AddSlider(
             saveSettings()
         end}
 )
-E:AddLabel("If you get the "exploit detected" message add more delay")
+E:AddLabel("If You Get Exploit Detected, Add More Delay")
 B:AddSlider(
     {Name = "Spin Delay", Default = _G.Settings.eggspintime, Min = 0, Max = 10, Callback = function(H)
             _G.Settings.eggspintime = H
@@ -1996,10 +1996,10 @@ z:AddTextbox(
             saveSettings()
         end}
 )
-D:AddLabel("If you get kicked, select behind")
+D:AddLabel("If You Get Kicked Alot, Select Behind")
 z:AddTextbox(
     {
-        Name = "Put @here or @everyone if you dont wanna be pinged directly",
+        Name = "Put @here or @everyone If You Can't Get Your Id",
         Default = _G.Settings.otherds,
         TextDisappear = false,
         Callback = function(H)
@@ -2008,14 +2008,14 @@ z:AddTextbox(
         end
     }
 )
-w:AddLabel("What you can toggle same time ?")
+w:AddLabel("What you can toggle at same time ")
 w:AddLabel("Option 1: Auto Lvl + Raid + Boss Rush + Speed Rush")
 w:AddLabel("Option 2: Specific + Raid + Boss Rush + Speed Rush")
 w:AddLabel("Option 3: Trial + Raid + Boss Rush + Speed Rush")
-y:AddLabel("If you get no reward adjust the value")
+y:AddLabel("If you get no reward just adjust the value")
 G:AddButton(
     {Name = "Script was reuploaded by sins!#0017", Callback = function()
-            setclipboard("sins!#0017")
+            setclipboard("https://discord.gg/hnz3gbNpD7")
         end}
 )
 G:AddButton(
@@ -2029,5 +2029,5 @@ G:AddTextbox(
             saveSettings()
         end}
 )
-u:MakeNotification({Name = "🌊 Wave Hub 🌊", Content = "Game: Anime Dimension", Time = 15})
+u:MakeNotification({Name = "🌊 Wave Hub ", Content = "Game: Anime Dimension", Time = 15})
 u:Init()
