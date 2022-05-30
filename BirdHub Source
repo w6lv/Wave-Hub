@@ -61,7 +61,7 @@ _G.Settings = {
     Autoraid = false,
     kickrejoin = false
 }
-local a = "Bird Hub"
+local a = "Wave Hub"
 local b = "AnimeDimension.lua"
 function saveSettings()
     local c = game:GetService("HttpService")
@@ -194,7 +194,7 @@ local r = {"Easy", "Hard", "Nightmare", "Infinite"}
 local s = {"Capsule Series 1", "Raid Capsule", "Infinity Nojo Capsule", "Esper Capsule"}
 local t = {"Esper Raid", "Tengoku Raid", "Hirito Raid", "Titan Raid", "Infinity Nojo Raid"}
 local u = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local v = u:MakeWindow({Name = "Bird Hub", HidePremium = true})
+local v = u:MakeWindow({Name = "Wave Hub", HidePremium = true})
 local w = v:MakeTab({Name = "Main", PremiumOnly = false})
 local x = v:MakeTab({Name = "Extra", PremiumOnly = false})
 local y = v:MakeTab({Name = "Setting", PremiumOnly = false})
@@ -2014,8 +2014,8 @@ w:AddLabel("Option 2: Specific + Raid + Boss Rush + Speed Rush")
 w:AddLabel("Option 3: Trial + Raid + Boss Rush + Speed Rush")
 y:AddLabel("If you get no reward adjust value")
 G:AddButton(
-    {Name = "Script by Bird Hub", Callback = function()
-            setclipboard("https://discord.gg/hnz3gbNpD7")
+    {Name = "Script by Wave Hub", Callback = function()
+            setclipboard("sins!#0017")
         end}
 )
 G:AddButton(
@@ -2029,5 +2029,5 @@ G:AddTextbox(
             saveSettings()
         end}
 )
-u:MakeNotification({Name = "🐦 Bird Hub 🐦", Content = "Game: Anime Dimension", Time = 15})
+u:MakeNotification({Name = "🌊 Wave Hub 🌊", Content = "Game: Anime Dimension", Time = 15})
 u:Init()
