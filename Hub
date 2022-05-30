@@ -194,7 +194,7 @@ local r = {"Easy", "Hard", "Nightmare", "Infinite"}
 local s = {"Capsule Series 1", "Raid Capsule", "Infinity Nojo Capsule", "Esper Capsule"}
 local t = {"Esper Raid", "Tengoku Raid", "Hirito Raid", "Titan Raid", "Infinity Nojo Raid"}
 local u = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local v = u:MakeWindow({Name = "🌊 Wave Hub", HidePremium = true})
+local v = u:MakeWindow({Name = "🌊 Wave Hub 🌊", HidePremium = true})
 local w = v:MakeTab({Name = "Main", PremiumOnly = false})
 local x = v:MakeTab({Name = "Extra", PremiumOnly = false})
 local y = v:MakeTab({Name = "Setting", PremiumOnly = false})
