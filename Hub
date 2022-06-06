@@ -133,6 +133,8 @@ local p = {
     "Yoriichi",
     "Saber Alter Character",
     "Alice",
+    "Gear 5 Luffy",
+    "Best Boy (Summer)",
     "Sung Jin Woo",
     "Infinity Gojo",
     "MilimCharacter (Valentine)",
@@ -191,7 +193,7 @@ local q = {
     "Slime Dimension"
 }
 local r = {"Easy", "Hard", "Nightmare", "Infinite"}
-local s = {"Capsule Series 1", "Raid Capsule", "Infinity Nojo Capsule", "Esper Capsule"}
+local s = {"Capsule Series 1", "Raid Capsule", "Gear 5 Fluffy Capsule", "Esper Capsule"}
 local t = {"Esper Raid", "Tengoku Raid", "Hirito Raid", "Titan Raid", "Infinity Nojo Raid", "Gear 5 Fluffy Raid"}
 local u = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 local v = u:MakeWindow({Name = "🌊Wave Hub", HidePremium = true})
